@@ -20,6 +20,10 @@ def con():
         print(f"the error is '{e}")
     return connection
 
+@app.route('/')
+def fetch():
+    return 'hello world'
+
 
 
 @app.route('/item/<int:id>',methods=["GET"])
